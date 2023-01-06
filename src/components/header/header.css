@@ -1,0 +1,52 @@
+nav {
+    background-color: #594545;
+    height: 7vh;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    margin-bottom: 10px;
+}
+
+.nav-pasd, .for-link, .sosmedakoeh {
+    display: flex;
+}
+
+.nav-pasd {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+.nav-pasd img {
+    width: 38px;
+    margin: 0 4vh;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.nav-pasd .for-link, .nav-pasd .sosmedakoeh {
+    list-style: none;
+}
+
+.for-link li, .for-link a, .sosmedakoeh li , .sosmedakoeh a{
+    margin: 0 1vh;
+    text-decoration: none;
+    color: #FFF8EA;
+    transition: 0.2s ease;
+}
+
+.for-link li a:hover, .sosmedakoeh li a:hover {
+    color: #CEEAF6;
+}
+
+@media screen and (max-width:950px){
+    nav{
+        flex-direction: row;
+    }
+    .nav-pasd img {
+        margin: 0 2vh;
+    }
+    .for-link li, .for-link a, .sosmedakoeh li , .sosmedakoeh a{
+        margin: 0 0.5vh;
+    }
+}

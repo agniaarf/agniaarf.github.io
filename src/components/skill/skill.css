@@ -1,0 +1,135 @@
+
+
+.skill-container {
+    display: flex;
+   
+}
+
+.skill-content {
+    width: calc(33% + 3px);
+    padding: 2vh;
+   
+}
+.skill-content h1{
+    text-align: center;
+}
+.pembates {
+    border-left: 2px solid black;
+}
+
+.skill-content .judul-skill {
+    margin: 2vh;
+    font-size: 26px;
+}
+
+.skill-container .list-skill {
+    margin: 0 6vh;
+    font-size: 24px;
+}
+
+.skillm {
+    margin: auto;
+    display: block;
+    width: 100%
+}
+
+.list-skill ul span {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.list-skill ul span i {
+    margin-right: 2vh;
+    min-width: 30px;
+}
+.pembates-page {
+    border: 1px solid black;
+    background-color: #000000;
+    display: block;
+    margin: 6vh auto;
+    width: 80%;
+} 
+.style{
+    list-style: none;
+}
+.bar{
+    background-color: #98754d;
+    display: block;
+    height: 15px;
+    border: 1px solid rgba(0, 0, 0, 3);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar span{
+    height: 15px;
+    float: left;
+    background-color: 
+    rgba(254, 249, 238, 0.8);
+    
+}
+.Bahasa-Indonesia{
+    width: 100%;
+    animation: Bahasa-Indonesia 3s;
+    
+}
+.English{
+    width: 60%;
+    animation: English 3s;
+}
+.Japan{
+    width: 30%;
+    animation: Japan 3s;
+}
+@keyframes Bahasa-Indonesia{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes English{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes Japan{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+html{
+    scroll-behavior: smooth;
+}
+@media screen and (max-width:875px) {
+     .skill-container{
+         flex-direction: column;
+     }
+     .pembates {
+        border-top: 2px solid black;
+        width: 60%;
+        align-items: center;
+    }
+    .skill-content h1{
+        text-align: center;
+    }
+    .skill-content{
+        width: 100%;
+    }
+
+    .list-skill {
+        align-items: center;
+        text-align: center;
+    }
+    .list-skill ul span i li{
+        align-items: center;
+    }
+}

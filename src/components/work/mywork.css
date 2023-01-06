@@ -1,0 +1,76 @@
+.porto-content .judul-porto {
+    margin: 8vh 10vh;
+    font-size: 26px;
+    text-align: center;
+}
+.porto-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.porto-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.porto-card .card{
+    position: relative;
+    width: 1000px;
+    height: 480px;
+    margin: 15px;
+    overflow: hidden;
+}
+.porto-card .card .card-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.porto-card .card .card-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.porto-card .card .card-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.porto-card .card .card-content div{
+    padding: 35vh;
+    color: #fff;
+    transition: 0.2s;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.porto-card .card:hover .card-content div{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    background-color: #8199a4;
+}
+@media screen and(max-width:920px) {
+    .porto-card{
+        flex-direction: column;
+    }
+    .porto-card .card{
+        position: relative;
+        width: 920px;
+        height: 480px;
+        margin: 15px;
+        overflow: hidden;
+    }
+}

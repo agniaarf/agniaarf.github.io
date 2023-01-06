@@ -1,0 +1,125 @@
+
+
+.hdr-container {
+    height: 60vh; 
+    margin: 7vh 0;
+    display: flex;
+}
+
+.hdr-content {
+    height: 100%;
+    display: flex;
+}
+
+.hdr-content .profile-img {
+    width: 50%;
+}
+
+.hdr-content .profile-img img {
+    width: 360px;
+    display: flex;
+    margin: 2vh auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* test text animasi */
+.wrappernih {
+    display: flex;
+}
+.wrappernih h2{
+    font-size: 2em;
+    overflow: hidden;
+    padding-left: 1.5vh;
+    position: relative;
+    color: #FFF8EA;
+    -webkit-text-stroke: 0.5px #99958c;
+}
+.wrappernih h2::before{
+    
+    content: attr(test-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 37%;
+    height: 100%;
+    -webkit-text-stroke: 0px #55534e;
+    color: #55534e;
+    padding-left: 1.5vh;
+    border-right: solid 3px #55534e;
+    overflow: hidden;
+    animation: animasi 6s ease-out infinite;
+    
+}
+@keyframes animasi {
+    0%,37%,100%{
+        width: 0;
+    }
+    77%, 90%{
+        width: 100%;
+    }
+}
+.hdr-content .short-desc {
+    width: 50%;
+    padding: 4vh 6vh;
+    margin: auto;
+}
+
+.hdr-content .short-desc .garis {
+    border: 1px solid #000000;
+    width: 23%;
+    margin-bottom: 3vh;
+    background-color: #000000;
+}
+
+.hdr-content .short-desc .mini-desc {
+    width: 92%;
+    height: auto;
+}
+.hdr-content .short-desc .contact {
+    border-left: 1px solid black;
+    margin-left: 2vh;
+}
+
+.hdr-content .short-desc .contact table {
+    margin-left: 1vh;
+}
+
+.hdr-content .short-desc .contact table tr td {
+    padding: 4px 6px;
+}
+
+@media screen and(max-width:659px){
+    .hdr-container {
+        flex-direction: row;
+        
+    }
+    .hdr-content .profile-img {
+        width: 30%;
+    }
+    .hdr-content .profile-img img {
+        width: 240px;
+        margin: 1vh auto;
+       
+    }
+    
+
+    
+}
+/* contact */
+/* .hdr-content .short-desc .mini-desc button {
+    width: 96%;
+    height: 8vh;
+    border-radius: 12px;
+    border: none;
+    background: #815B5B;
+    color: #FFF8EA;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.hdr-content .short-desc .mini-desc button:hover {
+    background-color: #594545;
+} */
+
